@@ -12,6 +12,10 @@ app.use(morgan());
 
 app.get('/:id', function(req, res, next) {
 	var id = req.params.id;
+	if (!content[id]) {
+		return next();
+	}
+
 	res.render('index', {
 		data: content[id],
 	});
