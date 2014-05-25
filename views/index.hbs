@@ -24,17 +24,39 @@
     <header class="bar bar-nav">
       <h1 class="title">Blessit</h1>
     </header>
+    
+    
+    <div id="contact-modal" class="modal">
+      <header class="bar bar-nav">
+        <a class="icon icon-close pull-right" href="#contact-modal"></a>
+        <h1 class="title">צור קשר</h1>
+      </header>
 
+      <div class="content content-padded">
+        
+          <form>
+            <input type="text" placeholder="שם מלא">
+            <textarea rows="5"></textarea>
+            <button class="btn btn-positive btn-block">שלח</button>
+          </form>
+
+      </div>
+    </div>
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content">
-      <h1 class="content-padded">Here is your video</h1>
+    <div class="content content-padded">
+      <h1 class="content-padded" align="center">וידאו שלך</h1>
       
       <div class="card">
         <div class="video-container">
           <iframe src="//{{data.videourl}}" frameborder="0" width="560" height="315"></iframe>
         </div>  
+
       </div>
+      <a href="#contact-modal" class="btn btn-positive btn-block">צור קשר</a>    
+        
+      
     </div>
+    
 
   </body>
 </html>
