@@ -1,0 +1,6 @@
+{
+  "name": "blessit",
+  "dependencies": {
+    "ratchet": "*"
+  }
+}
