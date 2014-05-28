@@ -21,4 +21,5 @@ app.get('/:id', function(req, res, next) {
 	});
 });
 
-app.listen(2000);
+app.listen(process.env.port || 2000);
+console.log('Listening in port ' + (process.env.port || 2000), 'NODE_ENV=' + process.env.NODE_ENV || 'development');
