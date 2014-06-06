@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Blessit</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="vendor/ratchet/dist/css/ratchet.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Include the compiled Ratchet JS -->
-    <script src="vendor/ratchet/dist/js/ratchet.js"></script>
-  </head>
-  <body>
-
-    <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-      <h1 class="title">Blessit</h1>
-    </header>
+        <!-- Add your site or application content here -->
     
-    
-    <div id="contact-modal" class="modal">
-      <header class="bar bar-nav">
-        <a class="icon icon-close pull-right" href="#contact-modal"></a>
-        <h1 class="title">צור קשר</h1>
-      </header>
-
-      <div class="content content-padded">
-        
-          <form>
-            <input type="text" placeholder="שם מלא">
-            <textarea rows="5"></textarea>
-            <button class="btn btn-positive btn-block">שלח</button>
-          </form>
-
+    <!-- header -->
+      <div class="header">
+        <img src="img/top.png" alt="" class="top img-responsive" />
+        <img src="img/alexnder.png" alt="" class="alexnder img-responsive" />
       </div>
-    </div>
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content content-padded">
-      <h1 class="content-padded" align="center">וידאו שלך</h1>
-      
-      <div class="card">
-        <div class="video-container">
-          <iframe src="//{{data.videourl}}" frameborder="0" width="560" height="315"></iframe>
-        </div>  
-
-      </div>
-      <a href="#contact-modal" class="btn btn-positive btn-block">צור קשר</a>    
-        
-      
-    </div>
+    <!-- end header -->
     
-
-  </body>
+    <!-- main content -->
+      <div class="container-fluid store_video">
+        <div class="row">
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xm-1 store">
+            <div class="store_bg">
+              <img src="img/background_4_shops.png" alt="" class="" />
+            </div>
+            <div class="app_google_store">
+              <a href=""><img src="img/app_store.png" alt="" class="app_store img-responsive" /></a>
+              <a href=""><img src="img/google_store.png" alt="" class="google_store img-responsive" /></a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-7 col-xm-7 video">
+            <div class="video_bg video-container">
+              <iframe src="//{{data.videourl}}" frameborder="0" width="560" height="315"></iframe>
+            </div>  
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xm-4 share_wish_gift">
+            <div class="wish">
+              <img src="img/wish.png" alt="" class="img-responsive" />
+            </div>
+            <div class="share">
+              <a href=""><img src="img/share.png" alt="" class="img-responsive" /></a>
+            </div>
+            <div class="gift_banner">
+              <img src="img/gift_banner.png" alt="" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end main content -->
+    
+    <!-- footer -->
+      <div class="bubbles">
+        <img src="img/width_bubbles.png" alt="" class="img-responsive"/>
+      </div>
+    <!-- end footer -->
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    
+    </body>
 </html>

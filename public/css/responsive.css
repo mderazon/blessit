@@ -1,0 +1,60 @@
+/* This CSS for small Mobile*/
+@media (max-width: 767px) {
+.top {
+  height: 135px;
+}
+.video_bg img {
+  margin-bottom:40px;
+}
+.share {
+margin-left:0%
+}
+.play {
+  left: 45%;
+  top: 35%;
+}
+img{margin:0 auto}
+}
+
+/* This CSS for Tablet */
+@media (min-width: 768px) {
+.top {
+  height: 175px;
+}
+.play {
+  left: 45%;
+  top: 35%;
+}
+.gift_banner {
+  margin-top:18%;
+}
+}
+
+/* This CSS for Medium Devices */
+@media (min-width: 992px) {
+.top {
+  height: 200px;
+}
+.gift_banner {
+  margin-top:22%;
+  
+}
+.play {
+  left: 40%;
+  top: 35%;
+}
+}
+
+/* This CSS for Large Devices */
+@media (min-width: 1200px) {
+.top {
+  height: 200px;
+}
+.gift_banner {
+  margin-top:10%;
+}
+.play {
+  left: 32%;
+  top: 35%;
+}
+}
