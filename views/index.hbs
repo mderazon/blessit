@@ -11,11 +11,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/normalize-css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="vendor/modernizr/modernizr.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,57 +23,74 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-    
-    <!-- header -->
-      <div class="header">
-        <img src="img/top.png" alt="" class="top img-responsive" />
-        <img src="img/alexnder.png" alt="" class="alexnder img-responsive" />
-      </div>
-    <!-- end header -->
-    
-    <!-- main content -->
-      <div class="container-fluid store_video">
-        <div class="row">
-          <div class="col-lg-1 col-md-1 col-sm-1 col-xm-1 store">
-            <div class="store_bg">
-              <img src="img/background_4_shops.png" alt="" class="" />
-            </div>
-            <div class="app_google_store">
-              <a href=""><img src="img/app_store.png" alt="" class="app_store img-responsive" /></a>
-              <a href=""><img src="img/google_store.png" alt="" class="google_store img-responsive" /></a>
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-7 col-sm-7 col-xm-7 video">
-            <div class="video_bg video-container">
-              <iframe src="//{{data.videourl}}" frameborder="0" width="560" height="315"></iframe>
-            </div>  
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xm-4 share_wish_gift">
-            <div class="wish">
-              <img src="img/wish.png" alt="" class="img-responsive" />
-            </div>
-            <div class="share">
-              <a href=""><img src="img/share.png" alt="" class="img-responsive" /></a>
-            </div>
-            <div class="gift_banner">
-              <img src="img/gift_banner.png" alt="" class="img-responsive" />
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- end main content -->
-    
-    <!-- footer -->
-      <div class="bubbles">
-        <img src="img/width_bubbles.png" alt="" class="img-responsive"/>
-      </div>
-    <!-- end footer -->
-    
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
+		
+		<!-- header -->
+			<div class="header">
+				<img src="img/top.png" alt="" class="top img-responsive" />
+				<img src="img/alexnder.png" alt="" class="alexnder img-responsive" />
+			</div>
+		<!-- end header -->
+		
+		<!-- apps store -->
+			<!-- <div class="my_apps_store">
+				<div class="store_bg">
+					<img src="img/background_4_shops.png" alt="" class="" />
+				</div>
+				<div class="app_google_store">
+					<a href=""><img src="img/app_store.png" alt="" class="app_store img-responsive" /></a>
+					<a href=""><img src="img/google_store.png" alt="" class="google_store img-responsive" /></a>
+				</div>
+			</div> -->
+		<!-- end apps store -->
+		
+		<!-- main content -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xm-offset-2">
+						<div class="wish"> <!-- Your wish text -->
+							<img src="img/wish.png" alt="" class="img-responsive" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10 col-md-10 col-sm-10 col-xm-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xm-offset-1">
+						<div class="video"> <!-- video section -->
+							<!-- enter your youtube video embed code -->
+							<iframe width="100%" height="500" src="//{{data.videourl}}?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xm-offset-2">
+						<!-- <div class="m_my_apps_store">
+							<div class="m_store_bg">
+								<img src="img/store_bg.png" alt="" class="img-responsive" />
+							</div>
+							<div class="m_app_google_store">
+								<ul>
+									<li><a href="http://www.your_iphone_apps_store_link.com"><img src="img/iphone_apps_store.png" alt="" class="app_store img-responsive" /></a></li>
+									<li><a href="http://www.your_google_play_store_link.com"><img src="img/google_play_store.png" alt="" class="google_store img-responsive" /></a></li>
+								</ul>
+							</div>
+						</div> -->
+						<div class="gift_banner">
+							<a href="/send"><img src="img/gift_banner.png" alt="" class="img-responsive" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- end main content -->
+		
+		<!-- footer -->
+			<div class="bubbles">
+				<img src="img/width_bubbles.png" alt="" class="img-responsive"/>
+			</div>
+		<!-- end footer -->
+		
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-    
+		
     </body>
 </html>

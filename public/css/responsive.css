@@ -1,60 +1,84 @@
 /* This CSS for small Mobile*/
 @media (max-width: 767px) {
 .top {
-  height: 135px;
+height: 135px;
 }
-.video_bg img {
-  margin-bottom:40px;
+.bubbles {
+margin-bottom: -40px;
+margin-top: 0px;
 }
-.share {
-margin-left:0%
+.video iframe{
+height: 335px;
 }
-.play {
-  left: 45%;
-  top: 35%;
+.m_my_apps_store{
+display: block;
 }
-img{margin:0 auto}
+.m_store_bg{
+margin-top: 5%;
+}
+.m_store_bg img{
+position: relative;
+}
+.m_app_google_store ul{
+display:inline;
+}
+.m_app_google_store ul li{
+display:inline-block;
+list-style:none;
+padding:10px;
+}
+.m_app_google_store ul li:first-child a img{
+left: -50px;
+position: absolute;
+right: 50px;
+top: 12px;
+}
+.m_app_google_store ul li:last-child a img{
+left: 50px;
+position: absolute;
+right: -50px;
+top: 12px;
+}
+.my_apps_store{
+display:none;
+}
 }
 
 /* This CSS for Tablet */
 @media (min-width: 768px) {
 .top {
-  height: 175px;
+height: 175px;
 }
-.play {
-  left: 45%;
-  top: 35%;
+.m_my_apps_store{
+display:none;
 }
-.gift_banner {
-  margin-top:18%;
+.my_apps_store{
+display:block;
 }
 }
 
 /* This CSS for Medium Devices */
 @media (min-width: 992px) {
 .top {
-  height: 200px;
+height: 200px;
 }
-.gift_banner {
-  margin-top:22%;
-  
+.m_my_apps_store{
+display:none;
 }
-.play {
-  left: 40%;
-  top: 35%;
+.my_apps_store{
+display:block;
 }
 }
 
 /* This CSS for Large Devices */
 @media (min-width: 1200px) {
 .top {
-  height: 200px;
+height: 225px;
 }
-.gift_banner {
-  margin-top:10%;
+.m_my_apps_store{
+display:none;
 }
-.play {
-  left: 32%;
-  top: 35%;
+.my_apps_store{
+display:block;
 }
 }

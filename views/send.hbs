@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/normalize-css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="vendor/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+		
+		<!-- header -->
+			<div class="header">
+				<img src="img/top.png" alt="" class="top img-responsive" />
+				<a href=""><img src="img/alexnder.png" alt="" class="alexnder img-responsive" /></a>
+			</div>
+		<!-- end header -->
+		
+		<!-- main content -->
+		<div class="container">
+			<div class="row">
+			<br>
+				<!-- mobile view -->
+				<div class="mobile_view">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xm-6">
+						<div class="thank_you_text">
+							<img src="img/thankyou_text.png" alt="" class="img-responsive"/>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xm-6">
+						
+							<img src="img/send_from.png" alt="" class="img-responsive" data-toggle="modal" data-target="#modal" />
+							<div class="fade modal" id="modal">
+								<div class="modal-dialog">
+									<div class="modal-content" dir="rtl">
+
+										<div class="modal-header">
+											<button type="button" class="close pull-left" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title">הפרטים שלך</h4>
+										</div>
+
+										<div class="modal-body" id="modal-form">
+											<form class="form-horizontal" action="/send", method="post" data-async data-target="#modal-form">
+												<div class="form-group">
+													<label class="control-label">שם מלא</label>
+													<input type="text" name="name" class="form-control" required>
+												</div>
+												<div class="form-group">
+													<label class="control-label">אימייל</label>
+													<input type="email" name="email" class="form-control" required>
+												</div>
+												<div class="form-group">
+													<label class="control-label">כתובת למשלוח</label>
+													<input type="text" name="address" class="form-control">
+												</div>
+												<button type="submit" class="btn btn-primary pull-left">שלח</button>
+												<!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">סגור</button> -->
+											</form>
+										</div>
+
+										<div class="modal-footer">
+											
+										</div>
+									</div><!-- /.modal-content -->
+								</div><!-- /.modal-dialog -->
+							</div><!-- /.modal -->
+						</div>
+					</div>
+				</div>
+				<!-- end mobile view -->
+			</div>
+		</div>
+		<!-- end main content -->
+		
+		<!-- footer -->
+			<div class="bubbles">
+				<img src="img/width_bubbles.png" alt="" class="img-responsive"/>
+			</div>
+		<!-- end footer -->
+		
+		
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+        	jQuery(function($) {
+        	    $('form[data-async]').on('submit', function(event) {
+        	        var $form = $(this);
+        	        var $target = $($form.attr('data-target'));
+        	 
+        	        $.ajax({
+        	            type: $form.attr('method'),
+        	            url: $form.attr('action'),
+        	            data: $form.serialize(),
+        	 
+        	            success: function(data, status) {
+        	                $target.html(data);
+        	            }
+        	        });
+        	 
+        	        event.preventDefault();
+        	    });
+        	});
+        </script>
+		
+    </body>
+</html>
