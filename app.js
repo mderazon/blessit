@@ -36,7 +36,7 @@ app.post('/send', function(req, res, next) {
         subject: "New subscriber!",
         text: "שם: " + body.name + "\n" +
               "אימייל: " + body.email + "\n" +
-              "כתובת: " + body.address,
+              "הערה: " + body.comment,
     };
 
     // send mail with defined transport object
