@@ -8,8 +8,8 @@ var nodemailer = require("nodemailer");
 var smtpTransport = nodemailer.createTransport("SMTP",{
     service: "Gmail",
     auth: {
-        user: "blessit.israel@gmail.com",
-        pass: "Q1A2Z3X4C5"
+        user: "ofir@blessit.co.il",
+        pass: "outloud2014"
     }
 });
 
@@ -31,8 +31,8 @@ app.post('/send', function(req, res, next) {
     var body = req.body;
 
     var mailOptions = {
-        from: "blessit.israel@gmail.com",
-        to: "blessit.israel@gmail.com",
+        from: "contact@blessit.co.il",
+        to: "contact@blessit.co.il",
         subject: "New subscriber!",
         text: "שם: " + body.name + "\n" +
               "אימייל: " + body.email + "\n" +
