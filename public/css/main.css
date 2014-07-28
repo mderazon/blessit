@@ -346,14 +346,17 @@ margin-bottom: 5%;
 margin-top: 5%;
 transition: all 0.3s ease 0.1s;
 }
+.gift_banner img{
+width:600px;
+}
 .bubbles{
 width:100%;
 transition: all 0.3s ease 0.1s;
 }
 .wish img{
-padding-bottom: 5%;
-padding-top: 5%;
+margin-top: 5%;
 transition: all 0.3s ease 0.1s;
+width: 300px;
 }
 .video iframe{
 height: 500px;
