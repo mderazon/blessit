@@ -24,7 +24,7 @@ app.use(bodyParser());
 app.use(morgan());
 
 app.get('/send', function(req, res, next) {
-    res.render('send');
+    res.redirect('http://blessit.wix.com/blessit');
 });
 
 app.post('/send', function(req, res, next) {

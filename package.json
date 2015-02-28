@@ -1,37 +1,33 @@
 {
   "name": "blessit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "blessit landing page",
   "engines": {
     "node": "0.10.x"
   },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "bower install --allow-root -f"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mderazon/blessit.git"
   },
   "dependencies": {
-    "express": "*",
-    "hbs": "*",
-    "morgan": "*",
-    "body-parser": "*",
-    "nodemailer": "*",
-    "bower": "*",
-    "tabletop": "*"
+    "body-parser": "^1.12.0",
+    "bower": "^1.3.12",
+    "express": "^4.12.0",
+    "hbs": "^2.8.0",
+    "morgan": "^1.5.1",
+    "nodemailer": "^1.3.1",
+    "tabletop": "^1.3.5"
   },
   "author": "Michael Derazon",
   "bugs": {
     "url": "https://github.com/mderazon/blessit/issues"
   },
   "homepage": "https://github.com/mderazon/blessit",
-  "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install --allow-root -f"
-  },
   "config": {
-      "unsafe-perm":true
+    "unsafe-perm": true
   }
-
 }
