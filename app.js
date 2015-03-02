@@ -1,5 +1,5 @@
 var express = require('express');
-var hbs = require('hbs');
+var hbs = require('ejs');
 var morgan  = require('morgan');
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
@@ -17,7 +17,7 @@ var content = require('./content');
 
 var app = express();
 
-app.set('view engine', 'hbs');
+app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser());

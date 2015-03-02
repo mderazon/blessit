@@ -364,3 +364,11 @@ width: 100%;
 margin-bottom: 10px;
 transition: all 0.3s ease 0.1s;
 }
+
+
+.btn {
+    background: #75B9A8;
+    padding: 22px;
+    font-size: 18px;
+    font-weight: bold;
+}
